@@ -1,6 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import NavigationBar from "../components/NavigationBar.astro";
+import Footer from "../components/Footer.astro";
+import Notes from "../components/Notes.astro";
+import"../style/globle.css";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -33,14 +37,9 @@ import Card from "../components/Card.astro";
 				</linearGradient>
 			</defs>
 		</svg>
-		<a href="/Home">Home</a>
-		<a href="/me">Me</a>
-		<a href="/about">About</a>
-		<a href="/blog">Blog</a>
-		<a href="/node">Note</a>
+		<NavigationBar />	
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<h2>朱怡澄</h2>
-		<h2>P211012632</h2>
+		<h2>P211012632  朱怡澄</h2>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br
 			/>
@@ -70,8 +69,16 @@ import Card from "../components/Card.astro";
 			/>
 		</ul>
 	</main>
+	<Footer />
 </Layout>
 
+<style>
+footer{
+	font-size: 12px;
+	color: aqua;
+	text-align: center;
+}
+</style>
 <style>
 	main {
 		margin: auto;
